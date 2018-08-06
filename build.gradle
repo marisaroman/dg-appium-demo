@@ -1,0 +1,17 @@
+
+plugins {
+    // Apply the java-library plugin to add support for Java Library
+    id 'java-library'
+}
+
+dependencies {
+	compile group: 'io.appium', name: 'java-client', version: '6.1.0'
+    testImplementation 'junit:junit:4.12'
+}
+
+repositories {
+    jcenter()
+    maven {
+        url "http://repo.maven.apache.org/maven2"
+    }
+}
